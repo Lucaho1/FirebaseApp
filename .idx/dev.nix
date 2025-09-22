@@ -5,7 +5,20 @@
   channel = "stable-24.05"; # or "unstable"
   # Use https://search.nixos.org/packages to find packages
   packages = [
-    pkgs.jdk21
+    pkgs.flutter
+    pkgs.jdk
+    pkgs.android-tools
+    pkgs.glibc
+    pkgs.libGL
+    pkgs.xorg.libX11
+    pkgs.xorg.libXrandr
+    pkgs.xorg.libXcursor
+    pkgs.xorg.libXinerama
+    pkgs.xorg.libXdamage
+    pkgs.xorg.libXfixes
+    pkgs.alsa-lib
+    pkgs.pulseaudio
+    pkgs.nss
     pkgs.unzip
   ];
   # Sets environment variables in the workspace
